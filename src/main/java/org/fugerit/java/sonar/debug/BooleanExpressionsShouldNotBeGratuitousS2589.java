@@ -1,7 +1,5 @@
 package org.fugerit.java.sonar.debug;
 
-import java.io.IOException;
-
 public class BooleanExpressionsShouldNotBeGratuitousS2589 {
 
 	private void doAdditionalWork() {
@@ -18,7 +16,7 @@ public class BooleanExpressionsShouldNotBeGratuitousS2589 {
 		}
 	}
 	
-	public void myMethod() throws IOException {
+	public void myMethod() {
 		boolean myCondition = "true".equalsIgnoreCase( System.getProperty( "my-prop" ) );
 		if ( !myCondition ) {
 			doAdditionalWork();
